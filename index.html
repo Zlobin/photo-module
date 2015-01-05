@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Photo Test</title>
+  <link rel="stylesheet" href="js/vendor/fileapi/jcrop/jquery.Jcrop.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="photo-module-wrapper">
+    <!-- STEP ONE -->
+    <div class="steps step-one">
+      <div class="num">1</div>
+      <span class="gostep next" data-step="2"></span>
+
+      <div class="inner-wrapper">
+        <div class="photo-selector2">
+          <div class="default-bg"></div>
+          <div class="user-border hidden"></div>
+          <div class="photo-bg hidden"></div>
+
+          <div class="photo-selector">
+            <div id="userpic" class="userpic">
+              <div class="btn btn-success js-fileapi-wrapper">
+                <div class="js-preview userpic__preview"></div>
+                <div class="b-upload__dnd"></div>
+                <div class="js-browse">
+                  <span class="btn-txt">Choose</span>
+                  <input type="file" name="filedata">
+                </div>
+              </div>
+            </div>
+
+            <input type="button" class="load-device" value="Загрузить с устройства">
+            <form id="set-url">
+              <input type="text" class="set-url" value="" placeholder="Указать URL">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP TWO -->
+    <div class="steps step-two hidden">
+      <div class="num">2</div>
+      <span class="gostep back" data-step="1"></span>
+      <span class="gostep next" data-step="3"></span>
+
+      <div class="inner-wrapper">
+        <div class="user-border"></div>
+        <div class="user-photo">
+          <img src="" id="imgLeft" width="132" height="264" alt="">
+          <img src="" id="imgRight" width="132" height="264" alt="">
+        </div>
+        <canvas id="canvasLeft" width="132" height="264"></canvas>
+        <canvas id="canvasRight" width="132" height="264"></canvas>
+
+        <div class="select-color"></div>
+
+        <div class="color-selector">
+          <span class="prev-color"></span>
+          <span class="color-bg color-1" data-id="1"></span>
+          <span class="next-color"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP THREE -->
+    <div class="steps step-three hidden">
+      <div class="num">3</div>
+      <span class="gostep back" data-step="2"></span>
+      <div class="inner-wrapper">
+        <img class="user-avatar" src="" alt="">
+
+        <div class="buttons">
+            <div class="print"><span></span>Печать</div>
+            <div class="save"><span></span>Сохранить</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="my-popup cadr-popup hidden">
+      <span class="close hide-popup"></span>
+      <div class="js-img"></div>
+      <div class="js-img-result"></div>
+      <div class="save"></div>
+    </div>
+  </div>
+
+  <script src="js/vendor/jquery/jquery-2.1.1.min.js"></script>
+  <script src="js/vendor/fabric/dist/fabric.min.js"></script>
+  <script src="js/vendor/fileapi/FileAPI/FileAPI.min.js"></script>
+  <script src="js/vendor/fileapi/FileAPI/FileAPI.exif.js"></script>
+  <script src="js/vendor/fileapi/jquery.fileapi.min.js"></script>
+  <script src="js/vendor/filesaver/filesaver.js"></script>
+  <script src="js/vendor/fileapi/jcrop/jquery.Jcrop.min.js"></script>
+  <script src="js/main.js"></script>
+</body>

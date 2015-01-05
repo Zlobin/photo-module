@@ -1,0 +1,416 @@
+body {
+  background:#cb8bff;
+  font-family:Arial, Helvetica, sans-serif;
+  margin:0;
+  padding:0;
+}
+
+.jcrop-handle {
+  background-color:#fff !important;
+  border:1px solid #fff !important;
+  opacity:1 !important;
+}
+
+.photo-module-wrapper {
+  overflow:visible;
+}
+
+.photo-module-wrapper .hidden {
+  display:none;
+}
+
+.photo-module-wrapper .steps {
+  height:200px;
+  margin:130px auto 0;
+  width:500px;
+}
+
+.photo-module-wrapper .steps .num {
+  color:#fff;
+  font-size:50px;
+  left:147px;
+  position:absolute;
+  top:20px;
+  z-index:4;
+}
+
+.photo-module-wrapper .step-one .b-upload__dnd {
+  height:264px;
+  left:40px;
+  position:absolute;
+  top:100px;
+  width:264px;
+}
+
+.photo-module-wrapper .step-one.two {
+  background:url(../img/peretashi.png) 335px 40px no-repeat;
+}
+
+.photo-module-wrapper .step-one .photo-bg {
+  background:#000;
+  height:264px;
+  left:40px;
+  overflow:hidden;
+  position:absolute;
+  top:97px;
+  width:264px;
+}
+
+.photo-module-wrapper .step-one .no-select {
+  background:url(../img/select.png) no-repeat;
+  cursor:pointer;
+  height:373px;
+  position:absolute;
+  top:87px;
+  width:441px;
+  z-index:2;
+}
+
+.photo-module-wrapper .step-one .next {
+  background:url(../img/next_1.png) no-repeat;
+  cursor:pointer;
+  display:block;
+  height:158px;
+  position:absolute;
+  right:90px;
+  top:160px;
+  width:240px;
+  z-index:1;
+}
+
+.photo-module-wrapper .step-one .load-device {
+  background:transparent;
+  border:2px solid #4a5d6e;
+  color:#ccc;
+  cursor:pointer;
+  font-size:14px;
+  height:50px;
+  left:60px;
+  position:absolute;
+  top:150px;
+  width:230px;
+}
+
+.photo-module-wrapper .step-one .set-url {
+  background:transparent;
+  border:2px solid #4a5d6e;
+  border-top:0;
+  color:#ccc;
+  font-size:14px;
+  height:50px;
+  left:60px;
+  position:absolute;
+  text-align:center;
+  top:250px;
+  width:230px;
+}
+
+.photo-module-wrapper .js-img-result canvas {
+  height:100%;
+  width:100%;
+}
+
+.photo-module-wrapper .step-two .user-photo {
+  height:264px;
+  left:40px;
+  position:absolute;
+  top:96px;
+  width:264px;
+}
+
+.photo-module-wrapper .step-two .user-photo img {
+  float:left;
+}
+
+.photo-module-wrapper .step-two .color-selector {
+  display:block;
+  height:96px;
+  left:50%;
+  margin-left:-103px;
+  position:absolute;
+  top:420px;
+  width:230px;
+}
+
+.photo-module-wrapper .step-two .select-color {
+  background:url(../img/select_color.png) no-repeat;
+  height:80px;
+  left:260px;
+  position:absolute;
+  top:405px;
+  width:113px;
+}
+
+.photo-module-wrapper .step-two .color-selector .color-bg {
+  display:inline-block;
+  height:94px;
+  position:relative;
+  width:96px;
+}
+
+.photo-module-wrapper .step-two .color-selector .color-bg.color-1 {
+  background:url(../img/color_1.png) no-repeat;
+}
+
+.photo-module-wrapper .step-two .color-selector .color-bg.color-2 {
+  background:url(../img/color_2.png) no-repeat;
+}
+
+.photo-module-wrapper .step-two .color-selector .color-bg.color-3 {
+  background:url(../img/color_3.png) no-repeat;
+  top:-1px;
+}
+
+.photo-module-wrapper .step-two .color-selector .color-bg.color-4 {
+  background:url(../img/color_4.png) no-repeat;
+  top:1px;
+}
+
+.photo-module-wrapper .step-two .color-selector .color-bg.color-5 {
+  background:url(../img/color_5.png) no-repeat;
+}
+
+.photo-module-wrapper .step-two .color-selector .prev-color {
+  background:url(../img/select_color_left.png) no-repeat;
+  cursor:pointer;
+  display:inline-block;
+  height:80px;
+  position:relative;
+  top:-5px;
+  width:60px;
+}
+
+.photo-module-wrapper .step-two .color-selector .next-color {
+  background:url(../img/select_color_right.png) no-repeat;
+  cursor:pointer;
+  display:inline-block;
+  height:80px;
+  position:relative;
+  top:-5px;
+  width:60px;
+}
+
+.photo-module-wrapper .step-two .next {
+  background:url(../img/next_2.png) no-repeat;
+  cursor:pointer;
+  display:block;
+  height:158px;
+  position:absolute;
+  right:90px;
+  top:160px;
+  width:240px;
+  z-index:1;
+}
+
+.photo-module-wrapper .step-two .back {
+  background:url(../img/back_2.png) no-repeat;
+  cursor:pointer;
+  display:block;
+  height:158px;
+  left:-170px;
+  position:absolute;
+  top:160px;
+  width:240px;
+  z-index:1;
+}
+
+.photo-module-wrapper .step-three .inner-wrapper .user-avatar {
+  border-radius:10px;
+  display:block;
+  height:264px;
+  position:absolute;
+  right:30px;
+  top:95px;
+  width:264px;
+}
+
+.photo-module-wrapper .step-one .inner-wrapper .user-border {
+  border:2px dashed #ccc;
+  border-radius:5px;
+  height:252px;
+  left:44px;
+  position:absolute;
+  top:101px;
+  width:252px;
+  z-index:99;
+}
+
+.photo-module-wrapper .step-three .back {
+  background:url(../img/back_3.png) no-repeat;
+  cursor:pointer;
+  display:block;
+  height:158px;
+  left:-170px;
+  position:absolute;
+  top:160px;
+  width:240px;
+  z-index:1;
+}
+
+.photo-module-wrapper .step-three .buttons {
+  color:#fff;
+  cursor:pointer;
+  font-size:20px;
+  position:absolute;
+  right:-150px;
+  top:110px;
+}
+
+.photo-module-wrapper .step-three .buttons div {
+  height:100px;
+  line-height:5.2;
+  overflow:hidden;
+  padding-left:110px;
+  position:relative;
+  width:0;
+}
+
+.photo-module-wrapper .step-three .buttons div span {
+  background:url(../img/buttons.png) no-repeat;
+  display:block;
+  height:98px;
+  left:0;
+  position:absolute;
+  top:0;
+  width:98px;
+}
+
+.photo-module-wrapper .step-three .buttons .print span {
+  background-position:-20px -20px;
+}
+
+.photo-module-wrapper .step-three .buttons .save span {
+  background-position:-20px -210px;
+}
+
+.photo-module-wrapper .step-three .buttons .print:hover span {
+  background-position:-183px -20px;
+}
+
+.photo-module-wrapper .step-three .buttons .save:hover span {
+  background-position:-183px -210px;
+}
+
+.photo-module-wrapper .step-three .buttons .print:active span {
+  background-position:-350px -20px;
+}
+
+.photo-module-wrapper .step-three .buttons .save:active span {
+  background-position:-350px -210px;
+}
+
+.shadow {
+  background:#000;
+  height:100%;
+  opacity:.8;
+  position:fixed;
+  width:100%;
+  z-index:10001;
+  top:0;
+  left:0;
+}
+
+.photo-module-wrapper .my-popup {
+  left:50%;
+  position:absolute;
+  top:50%;
+  z-index:10002;
+}
+
+.photo-module-wrapper .my-popup .close {
+  background:url(../img/close.png) no-repeat;
+  cursor:pointer;
+  display:block;
+  height:24px;
+  position:absolute;
+  right:15px;
+  top:15px;
+  width:24px;
+}
+
+.photo-module-wrapper .cadr-popup {
+  background:url(../img/cadr_popup.png) no-repeat;
+  height:445px;
+  margin-left:-365px;
+  margin-top:-222px;
+  width:730px;
+}
+
+.photo-module-wrapper .cadr-popup .save {
+  background:url(../img/save_.png) no-repeat;
+  cursor:pointer;
+  height:78px;
+  left:50%;
+  margin-left:-98px;
+  position:absolute;
+  top:360px;
+  width:210px;
+}
+
+.photo-module-wrapper .cadr-popup .save:active {
+  background:url(../img/save_2.png) no-repeat;
+  top:366px;
+  margin-left: -93px;
+}
+
+#imgLeft {
+  border-bottom-left-radius:10px;
+  border-top-left-radius:10px;
+}
+
+#imgRight {
+  border-bottom-right-radius:10px;
+  border-top-right-radius:10px;
+}
+
+.photo-bg {
+  border-radius:10px;
+}
+
+.photo-module-wrapper .js-img {
+  height:264px;
+  left:100px;
+  position:absolute;
+  top:95px;
+  width:310px;
+}
+
+.photo-module-wrapper .js-img-result {
+  height:264px;
+  left:500px;
+  position:absolute;
+  top:95px;
+  width:132px;
+}
+
+.photo-module-wrapper .step-one,.photo-module-wrapper .step-two,.photo-module-wrapper .step-three {
+  height:420px;
+  left:120px;
+  position:relative;
+  width:600px;
+}
+
+.photo-module-wrapper .step-one .js-browse,.photo-module-wrapper .step-one .js-preview,.photo-module-wrapper .step-two .canvas-container {
+  left:-10000px;
+  position:absolute;
+  top:-10000px;
+}
+
+.photo-module-wrapper .step-one .inner-wrapper,.photo-module-wrapper .step-two .inner-wrapper,.photo-module-wrapper .step-three .inner-wrapper {
+  background:url(../img/step_1_pattern.png) no-repeat;
+  height:403px;
+  position:relative;
+  width:334px;
+  z-index:2;
+}
+
+.photo-module-wrapper .step-two .inner-wrapper .user-border,.photo-module-wrapper .step-three .inner-wrapper .user-border {
+  border:2px dashed #fff;
+  border-radius:5px;
+  height:252px;
+  left:44px;
+  position:absolute;
+  top:99px;
+  width:252px;
+  z-index:99;
+}
