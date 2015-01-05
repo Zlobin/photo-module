@@ -173,7 +173,7 @@
       var $canvas = $('<canvas/>');
       var ctx = $canvas[0].getContext('2d');
       var img = new Image();
-      var border = '/img/round_.png';
+      var border = 'img/round_.png';
 
       $canvas[0].width = 264;
       $canvas[0].height = 264;
